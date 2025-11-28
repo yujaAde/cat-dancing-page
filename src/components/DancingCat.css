@@ -1,0 +1,142 @@
+.dancing-cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.cat-wrapper {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-image {
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.cat-wrapper.dancing .cat-image {
+  animation: dance 2s ease-in-out infinite;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateY(-20px) rotate(-5deg) scale(1.05);
+  }
+  20% {
+    transform: translateY(0) rotate(5deg) scale(1);
+  }
+  30% {
+    transform: translateY(-30px) rotate(-10deg) scale(1.1);
+  }
+  40% {
+    transform: translateY(0) rotate(10deg) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0deg) scale(1.08);
+  }
+  60% {
+    transform: translateY(0) rotate(-8deg) scale(1);
+  }
+  70% {
+    transform: translateY(-15px) rotate(8deg) scale(1.05);
+  }
+  80% {
+    transform: translateY(0) rotate(-5deg) scale(1);
+  }
+  90% {
+    transform: translateY(-10px) rotate(5deg) scale(1.02);
+  }
+}
+
+.control-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 3px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.control-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.control-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 반응형 디자인 - 태블릿 */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .cat-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .control-button {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+  }
+}
+
+/* 반응형 디자인 - 모바일 */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cat-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .control-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+
+  @keyframes dance {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translateY(-15px) rotate(-8deg) scale(1.05);
+    }
+    50% {
+      transform: translateY(-20px) rotate(0deg) scale(1.08);
+    }
+    75% {
+      transform: translateY(-15px) rotate(8deg) scale(1.05);
+    }
+  }
+}

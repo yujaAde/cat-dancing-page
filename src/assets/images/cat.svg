@@ -1,0 +1,54 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Ear -->
+  <path d="M60 40 L50 10 L70 30 Z" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+  <path d="M60 40 L55 20 L65 30 Z" fill="#FFB380"/>
+
+  <!-- Right Ear -->
+  <path d="M140 40 L130 30 L150 10 Z" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+  <path d="M140 40 L135 30 L145 20 Z" fill="#FFB380"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="80" r="45" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+
+  <!-- Eyes -->
+  <ellipse cx="85" cy="75" rx="8" ry="12" fill="#2C3E50"/>
+  <ellipse cx="115" cy="75" rx="8" ry="12" fill="#2C3E50"/>
+  <circle cx="87" cy="72" r="3" fill="white"/>
+  <circle cx="117" cy="72" r="3" fill="white"/>
+
+  <!-- Nose -->
+  <path d="M100 85 L95 90 L105 90 Z" fill="#FF6B35"/>
+
+  <!-- Mouth -->
+  <path d="M100 90 Q95 95 90 93" stroke="#FF6B35" stroke-width="2" fill="none"/>
+  <path d="M100 90 Q105 95 110 93" stroke="#FF6B35" stroke-width="2" fill="none"/>
+
+  <!-- Whiskers Left -->
+  <line x1="60" y1="80" x2="30" y2="75" stroke="#FF6B35" stroke-width="1.5"/>
+  <line x1="60" y1="85" x2="30" y2="85" stroke="#FF6B35" stroke-width="1.5"/>
+  <line x1="60" y1="90" x2="30" y2="95" stroke="#FF6B35" stroke-width="1.5"/>
+
+  <!-- Whiskers Right -->
+  <line x1="140" y1="80" x2="170" y2="75" stroke="#FF6B35" stroke-width="1.5"/>
+  <line x1="140" y1="85" x2="170" y2="85" stroke="#FF6B35" stroke-width="1.5"/>
+  <line x1="140" y1="90" x2="170" y2="95" stroke="#FF6B35" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="150" rx="40" ry="50" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+
+  <!-- Belly -->
+  <ellipse cx="100" cy="155" rx="25" ry="35" fill="#FFB380"/>
+
+  <!-- Left Arm -->
+  <ellipse cx="70" cy="140" rx="12" ry="30" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+
+  <!-- Right Arm -->
+  <ellipse cx="130" cy="140" rx="12" ry="30" fill="#FF8C42" stroke="#FF6B35" stroke-width="2"/>
+
+  <!-- Paws -->
+  <circle cx="70" cy="165" r="8" fill="#FFB380"/>
+  <circle cx="130" cy="165" r="8" fill="#FFB380"/>
+
+  <!-- Tail -->
+  <path d="M135 170 Q160 160 165 140 Q168 125 160 115" stroke="#FF8C42" stroke-width="15" fill="none" stroke-linecap="round"/>
+</svg>
